@@ -2,4 +2,4 @@
 if __name__ == '__main__':
     from variable_load_5 import a
     aux = a
-    print ("{}".format(aux))
+    print ("{:d}".format(aux))
