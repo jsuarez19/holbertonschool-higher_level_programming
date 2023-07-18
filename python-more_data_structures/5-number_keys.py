@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 def number_keys(a_dictionary):
     i = 0
     for element in list(a_dictionary):
