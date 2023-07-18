@@ -5,7 +5,7 @@ def roman_to_int(roman_string):
     if roman_string is None:
         return result
     for i in range(len(roman_string) - 1, -1, -1):
-        roman_string[i] = k
+        k = roman_string[i]
         v = dic[k]
         if v >= aux:
             result += v
