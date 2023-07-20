@@ -1,10 +1,16 @@
 #!/usr/bin/python3
-"""
-2. Size validation
-"""
+"""2. Size validation"""
+
+
 class Square:
     """A class Square"""
+
     def __init__(self, size=0):
+        """Initialize an Square
+
+        Args:
+            size (int): The square's size
+        """
         try:
             if not isinstance(size, int):
                 raise TypeError("size must be an integer")
