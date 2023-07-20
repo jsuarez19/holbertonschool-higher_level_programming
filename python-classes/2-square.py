@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""This py will define a square class."""
+"""
+This py will define a square class.
+"""
+
+
 class Square:
     """A class Square"""
     def __init__(self, size=0):
