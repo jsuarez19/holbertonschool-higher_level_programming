@@ -7,8 +7,9 @@ Printing a square
 class Square:
     """Create Square class"""
 
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         self.__size = size
+        self.__position = position
 
     @property
     def size(self):
@@ -28,9 +29,10 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if position[0] < 0 and position[1] < 0:
+        if value[0] < 0 and value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-    
+        else:
+            self.__position = value
 
     def area(self):
         """Returns area of square"""
@@ -41,9 +43,9 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            print(position[1] * '\n')
+            print(__position[1] * '\n')
             for i in range(self.__size):
-                print(position[0] * ' ', end='')
+                print(__position[0] * ' ', end='')
                 for j in range(self.size):
                     print("#", end='')
                 print()
