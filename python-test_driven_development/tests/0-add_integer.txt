@@ -1,0 +1,18 @@
+The 0-add_integer module ::
+=====================================
+
+Import add_integer function
+----------------------
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Add two integers, both positives
+-----------------------
+>>> add_integer(4, 5)
+9
+
+Set the first argument of type str
+-----------------------
+>>> add_integer("4", 5)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
