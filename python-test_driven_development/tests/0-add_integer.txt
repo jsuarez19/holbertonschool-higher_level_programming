@@ -16,3 +16,13 @@
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
+
+#a = negative int || b = negative int
+-----------------------
+>>> add_integer(-4, -3)
+-7
+
+#a = float || b = float
+-----------------------
+>>> add_integer(3.14, 0.01)
+3
