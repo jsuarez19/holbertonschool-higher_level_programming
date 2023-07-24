@@ -23,6 +23,6 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
-    new = [[round(elemento / div, 2) for elemento in row] for row in matrix]
+    new_matrix = [[round(elemento / div, 2) for elemento in row] for row in matrix]
 
-    return new
+    return new_matrix
