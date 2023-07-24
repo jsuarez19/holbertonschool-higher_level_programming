@@ -11,7 +11,6 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     newText = ''
-    i = 0
     symbols = [".", "?", ":"]
     for char in text:
         newText += char
