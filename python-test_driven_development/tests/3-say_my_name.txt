@@ -13,7 +13,7 @@ My name is John Smith
 #Pass only first name
 -----------------------
 >>> say_my_name("Bob")
-My name is Bob
+My name is Bob 
 
 #Pass int and a string
 -----------------------
