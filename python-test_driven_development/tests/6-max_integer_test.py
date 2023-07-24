@@ -11,6 +11,5 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(result, 3)
 
     def test_list_str(self):
-        with self.assertRaises(TypeError):
-            max_integer(['a', 'n'])
+        self.assertRaises(TypeError, max_integer, ['a', 'n'])
 
