@@ -43,4 +43,26 @@ Traceback (most recent call last):
 ...
 TypeError: Each row of the matrix must have the same size
 
+#matrix 2 by 3, and div = float(inf) 
+-----------------------
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix, 1e1000)
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+#matrix 2 by 3, div non existent
+------------------------
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix)
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+#empty function
+------------------------
+>>> matrix_divided()
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+
 
