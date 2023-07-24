@@ -17,4 +17,4 @@ def text_indentation(text):
         if char in symbols:
             newText = newText.strip()
             newText += "\n\n"
-    print (newText, end='')
+    print(newText, end='')
