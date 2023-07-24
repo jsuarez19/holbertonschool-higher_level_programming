@@ -10,7 +10,7 @@
 >>> text_indentation("Lorem. ipsum?")
 Lorem.
 <BLANKLINE>
- ipsum?
+ipsum?
 <BLANKLINE>
 
 #Pass a string without ., ? or :
