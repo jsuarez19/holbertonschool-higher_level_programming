@@ -1,0 +1,36 @@
+#The ``3-say_my_name`` module ::
+=====================================
+
+#Import ``say_my_name`` function
+----------------------
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+#Pass two strings
+-----------------------
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+#Pass only first name
+-----------------------
+>>> say_my_name("Bob")
+My name is Bob
+
+#Pass int and a string
+-----------------------
+>>> say_my_name(3, "Smith")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+#Pass string and int
+-----------------------
+>>> say_my_name("John", 3)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+
+
+
+
+
