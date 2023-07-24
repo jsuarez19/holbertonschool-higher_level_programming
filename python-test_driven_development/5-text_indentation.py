@@ -12,7 +12,7 @@ def text_indentation(text):
 
     start = 0
     symbols = [".", "?", ":"]
-    for i, char in text:
+    for i, char in enumerate(text):
         if char in symbols:
             print(text[start:i + 1], end="\n\n")
             start = i + 1
