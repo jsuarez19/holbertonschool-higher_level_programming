@@ -1,0 +1,43 @@
+#The ``5-text_indentation`` module ::
+=====================================
+
+#Import ``text_indentation`` function
+----------------------
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+#Pass a string with . and ?
+-----------------------
+>>> text_indentation("Lorem. ipsum?")
+Lorem.
+<BLANKLINE>
+ ipsum?
+<BLANKLINE>
+<BLANKLINE>
+
+#Pass a string without ., ? or :
+-----------------------
+>>> text_indentation("Lorem ipsum")
+Lorem ipsum
+
+#Pass a negative int
+-----------------------
+>>> text_indentation(-1)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+#text float positive
+-----------------------
+>>> text_indentation(3.14)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+#Missing arguments
+-----------------------
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+
