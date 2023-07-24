@@ -13,10 +13,10 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([-1, 4, 3]), 4)
         self.assertEqual(max_integer([-1, -4, -3]), -1)
         self.assertEqual(max_integer([3]), 3)
+        self.assertEqual(max_integer([]), None)
 
     def test_list_str(self):
         self.assertRaises(TypeError, max_integer, ['a', 6])
 
     def empty_list(self):
-        self.assertEqual(max_integer([]), None)
         self.assertRaises(TypeError, max_integer, None)
