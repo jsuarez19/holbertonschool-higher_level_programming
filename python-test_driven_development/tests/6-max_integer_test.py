@@ -19,3 +19,4 @@ class TestMaxInteger(unittest.TestCase):
 
     def empty_list(self):
         self.assertEqual(max_integer([]), None)
+        self.assertRaises(TypeError, max_integer, None)
