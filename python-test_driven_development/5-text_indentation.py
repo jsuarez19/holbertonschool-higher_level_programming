@@ -16,4 +16,4 @@ def text_indentation(text):
         newText += char
         if char in symbols:
             newText += "\n\n"
-    print (newText)
+    print (newText, end='')

@@ -12,7 +12,6 @@ Lorem.
 <BLANKLINE>
  ipsum?
 <BLANKLINE>
-<BLANKLINE>
 
 #Pass a string without ., ? or :
 -----------------------
