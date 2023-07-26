@@ -53,3 +53,4 @@ class Rectangle:
                 for j in range(self.__width):
                     print("#", end='')
                 print("")
+        return ("__str__ executed")
