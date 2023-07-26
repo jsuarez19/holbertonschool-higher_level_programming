@@ -6,7 +6,6 @@ Real definition of a rectangle
 
 class Rectangle:
     """Creates new class Rectangle"""
-
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -23,10 +22,10 @@ class Rectangle:
                 raise ValueError("width must be >= 0")
             else:
                 self.__width = value
+    
     @property:
         def height(self):
             return self.__height
-
 
     @height.setter:
         def height(self, value):
