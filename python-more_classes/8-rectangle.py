@@ -20,10 +20,10 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        biggest = rect_1.area()
-        if rect_2.area() > biggest:
-            biggest = rect2.area
-        return biggest
+        if rect_1.area() >= rect_2.area:
+            return rect_1
+        else:
+            return rect_2
 
     @property
     def width(self):
