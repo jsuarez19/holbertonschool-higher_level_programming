@@ -8,17 +8,38 @@ class Rectangle:
     """Creates new class Rectangle"""
 
     def __init__(self, width=0, height=0):
-        """__init___ method."""
+        """__init___ method
+        Args:
+            width (int): integer width
+            height (int): integer height
+        """
+        
         self.width = width
         self.height = height
 
     @property:
         def width(self):
-            """width: returns width"""
+            """width: returns width
+            Args:
+                width (int): integer width
+            Returns:
+                rectangle width
+            Raises:
+                TypeError: if width is not an integer
+                ValueError: if width is less than 0
+            """
             return self.__width
     @property:
         def height(self):
-            """height: returns height"""
+            """height: returns height
+            Args:
+                height (int): integer height
+            Returns:
+                rectangle height
+            Raises:
+                TypeError: if height is not an integer
+                ValueError: if height is less than 0
+            """
             return self.__height
 
 
