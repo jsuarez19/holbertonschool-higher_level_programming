@@ -3,6 +3,7 @@
 Real definition of a rectangle
 """
 
+
 class Rectangle:
     """Creates new class Rectangle"""
 
