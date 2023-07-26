@@ -16,6 +16,11 @@ class Rectangle:
         def width(self):
             """width: returns width"""
             return self.__width
+    @property:
+        def height(self):
+            """height: returns height"""
+            return self.__height
+
 
     @width.setter:
         def width(self, value):
@@ -25,11 +30,6 @@ class Rectangle:
                 raise ValueError("width must be >=0")
             else:
                 self.__width = value
-
-    @property:
-        def height(self):
-            """height: returns height"""
-            return self.__height
 
     @height.setter:
         def height(self, value):
