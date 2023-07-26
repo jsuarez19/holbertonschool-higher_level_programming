@@ -49,7 +49,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         else:
-            for i in range(self.__width):
-                for j in range(self.__height):
+            for i in range(self.__height):
+                for j in range(self.__width):
                     print("#", end='')
                 print("")
