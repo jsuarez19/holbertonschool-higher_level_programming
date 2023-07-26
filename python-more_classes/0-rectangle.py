@@ -5,4 +5,5 @@ Simple rectangle
 
 
 class Rectangle:
+    """Creates new class Rectangle"""
     pass
