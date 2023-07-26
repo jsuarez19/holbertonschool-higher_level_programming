@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 """
-Simple rectangle
+Real definition of a rectangle
 """
 
 
 class Rectangle:
     """Creates new class Rectangle"""
+
+    def __init__(self, width=0, height=0):
+        self.width = width
+        self.height = height
 
     @property:
         def width(self):
