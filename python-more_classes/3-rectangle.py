@@ -49,8 +49,9 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         else:
+            result = ""
             for i in range(self.__height):
                 for j in range(self.__width):
-                    print("#", end='')
-                print("")
-        return ("__str__ executed")
+                    result += "#"
+                result +="\n"
+            return result
