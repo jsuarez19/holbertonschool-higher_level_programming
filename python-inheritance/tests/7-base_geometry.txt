@@ -23,3 +23,56 @@ ValueError: Jhon must be greater than 0
 Traceback (most recent call last):
 ...
 TypeError: Jhon must be an integer
+
+#Pass None
+----------------------
+>>> obj.integer_validator("Jhon", None)
+Traceback (most recent call last):
+...
+TypeError: Jhon must be an integer
+
+#Pass set
+----------------------
+>>> obj.integer_validator("Jhon", {1, 2})
+Traceback (most recent call last):
+...
+TypeError: Jhon must be an integer
+
+#Pass bool
+----------------------
+>>> obj.integer_validator("Jhon", True)
+
+#Pass list
+----------------------
+>>> obj.integer_validator("Jhon", [5])
+Traceback (most recent call last):
+...
+TypeError: Jhon must be an integer
+
+#Pass tuple
+----------------------
+>>> obj.integer_validator("Jhon", (5,))
+Traceback (most recent call last):
+...
+TypeError: Jhon must be an integer
+
+#Test area()
+----------------------
+>>> obj.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+#Passing only one argument
+----------------------
+>>> obj.integer_validator("Alex")
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+#Not passing any arguments
+----------------------
+>>> obj.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
