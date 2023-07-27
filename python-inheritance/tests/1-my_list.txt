@@ -29,4 +29,4 @@
 ----------------------
 >>> my_list = MyList()
 >>> print(my_list)
-pass
+[]
