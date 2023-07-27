@@ -14,11 +14,11 @@
 >>> BaseGeometry.integer_validator('Jhon', -5)
 Traceback (most recent call last):
 ...
-ValueError: <name> must be greater than 0
+ValueError: Jhon must be greater than 0
 
 #Pass str
 ----------------------
->>> BaseGeometry.integer_validator('Jhon', -5)
+>>> BaseGeometry.integer_validator('Jhon', '-5')
 Traceback (most recent call last):
 ...
-TypeError: <name> must be an integer
+TypeError: Jhon must be an integer
