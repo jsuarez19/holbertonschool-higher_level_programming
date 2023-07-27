@@ -10,4 +10,4 @@ class MyList(list):
         print(sorted(self))
 
     def __str__(self):
-        pass
+        return "pass"
