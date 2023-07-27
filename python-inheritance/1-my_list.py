@@ -8,6 +8,3 @@ class MyList(list):
     """Subclass of list"""
     def print_sorted(self):
         print(sorted(self))
-
-    def __str__(self):
-        return "pass"
