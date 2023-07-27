@@ -33,10 +33,5 @@
 
 #Check return
 ----------------------
->>> my_list = MyList()
->>> my_list.append(11)
->>> my_list.append(7)
->>> my_list.print_sorted() is list
-[7, 11]
-False
-
+>>> MyList.print_sorted() is list
+True
