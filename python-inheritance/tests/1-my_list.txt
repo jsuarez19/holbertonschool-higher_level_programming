@@ -33,5 +33,10 @@
 
 #Check return
 ----------------------
->>> MyList.print_sorted() is list
-True
+>>> my_list = MyList()
+>>> my_list.append(-2)
+>>> my_list.append(-5)
+>>> my_list.append(-4)
+>>> my_list.print_sorted() is my_list
+[-5, -4, -2]
+False
