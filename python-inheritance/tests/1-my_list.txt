@@ -29,5 +29,6 @@
 ----------------------
 >>> my_list = MyList()
 >>> print(my_list)
-None
-
+Traceback (most recent call last):
+...
+TypeError: __str__ returned non-string (type NoneType)
