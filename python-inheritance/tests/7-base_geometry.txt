@@ -7,6 +7,7 @@
 
 #Pass int zero
 ------------------------
+>>> obj = BaseGeometry()
 >>> obj.integer_validator("Jhon", 0)
 Traceback (most recent call last):
 ...
