@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+"""
+Write to a file
+"""
+
+
+def write_file(filename="", text=""):
+    """Reads a file using with"""
+    with open(filename, encoding="utf-8") as f:
+        f.write(text)
