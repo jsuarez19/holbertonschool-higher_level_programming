@@ -5,6 +5,14 @@
 ----------------------
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+#Pass bool
+----------------------
+>>> obj = BaseGeometry()
+>>> obj.integer_validator("Jhon", True)
+Traceback (most recent call last):
+...
+TypeError: Jhon must be an integer
+
 #Pass int positive
 -----------------------
 >>> obj = BaseGeometry()
@@ -37,10 +45,6 @@ TypeError: Jhon must be an integer
 Traceback (most recent call last):
 ...
 TypeError: Jhon must be an integer
-
-#Pass bool
-----------------------
->>> obj.integer_validator("Jhon", True)
 
 #Pass list
 ----------------------
