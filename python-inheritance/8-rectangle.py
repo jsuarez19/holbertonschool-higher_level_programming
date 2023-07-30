@@ -6,6 +6,12 @@ Improve Geometry
 
 class BaseGeometry:
     """empty class"""
+    def __init__(self, width, height):
+        integer_validator(self.__width, width)
+        integer_validator(self.__height, height)
+        self.__width = width
+        self.__height = height
+
     def area(self):
         raise Exception("area() is not implemented")
 
