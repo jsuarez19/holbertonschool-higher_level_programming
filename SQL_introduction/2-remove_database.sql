@@ -1,3 +1,3 @@
--- Delete a database
--- Deletes the database hbtn_0c_0
-DELETE DATABASE IF EXISTS hbtn_0c_0;
+-- Remove a database
+-- Removes the database hbtn_0c_0
+REMOVE DATABASE IF EXISTS hbtn_0c_0;
