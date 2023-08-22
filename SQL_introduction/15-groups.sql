@@ -2,4 +2,5 @@
 -- groups the results based on the distinct score values
 SELECT score, COUNT(*) AS number
 FROM second_table
-GROUP BY score;
+GROUP BY score
+ORDER BY number DESC;
