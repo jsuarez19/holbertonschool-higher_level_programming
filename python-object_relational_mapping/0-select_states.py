@@ -2,8 +2,6 @@
 """
 lists all states from the database hbtn_0e_0_usa
 """
-
-
 import MySQLdb
 import sys
 
@@ -16,3 +14,6 @@ c.execute(query)
 rows = c.fetchall()
 for row in rows:
     print(row)
+
+c.close()
+db.close()
