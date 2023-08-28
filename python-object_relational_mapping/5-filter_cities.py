@@ -29,8 +29,10 @@ ORDER BY cities.id"
 
     """ Printing all the rows """
     rows = c.fetchall()
+    result = []
     for row in rows:
-        print(row)
+        result.append(row[0])
+    print(", ".join(result))
 
     """ Cleaning process """
     c.close()
