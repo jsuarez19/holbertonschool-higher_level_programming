@@ -27,7 +27,7 @@ if __name__ == '__main__':
     rows = c.fetchall()
     for row in rows:
         print(row)
-        
+
     """ Cleaning process """
     c.close()
     db.close()
