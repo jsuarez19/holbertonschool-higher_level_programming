@@ -17,7 +17,7 @@ if __name__ == '__main__':
     c = db.cursor()
 
     """ Execute queries """
-    query = "SELECT * FROM states WHERE name = {:s} ORDER BY id".format(sys.argv[4])
+    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id".format(sys.argv[4])
     c.execute(query)
 
     """ Printing all the rows """
