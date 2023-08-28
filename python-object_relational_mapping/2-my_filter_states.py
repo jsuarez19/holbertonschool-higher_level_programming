@@ -20,9 +20,8 @@ if __name__ == '__main__':
     c = db.cursor()
 
     """ Execute queries """
-    query = "SELECT * FROM states WHERE name \
-LIKE BINARY '{}' ORDER BY id".format(sys.argv[4])
-    c.execute(query)
+    query = "SELECT * FROM states WHERE name LIKE BINARY %s ORDER BY id"
+    c.execute(query, (sys.argv[4],))
 
     """ Printing all the rows """
     rows = c.fetchall()
