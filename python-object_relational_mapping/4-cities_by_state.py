@@ -19,10 +19,10 @@ if __name__ == '__main__':
     c = db.cursor()
 
     """ Execute queries """
-    query = "SELECT cities.id, cities.name, states.name\
-FROM cities\
-INNER JOIN states\
-ON states.id = cities.states_id\
+    query = "SELECT cities.id, cities.name, states.name \
+FROM cities \
+INNER JOIN states \
+ON states.id = cities.states_id \
 ORDER BY cities.id"
     c.execute(query)
 
