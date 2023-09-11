@@ -4,7 +4,7 @@ This module contains the class definition of a State including id and name
 Contains the State class that inherits from Base = declarative_base()
 """
 
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 import sys
 
@@ -23,7 +23,7 @@ class State(Base):
     __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True, autoincrement=True,
-                 nullable=False, unique=True)
+                nullable=False, unique=True)
     name = Column(String(128), nullable=False)
 
 
