@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 This module contains the class definition of a State including id and name
+Contains the State class that inherits from Base = declarative_base()
 """
 
 from sqlalchemy import Column, Integer, String
