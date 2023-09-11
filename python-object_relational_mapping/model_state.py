@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-First state model
+This module contains the class definition of a State including id and name
 """
+
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 import sys
@@ -12,12 +13,11 @@ db=sys.argv[3]
 db_url = "mysql://{}:{}@localhost:3306/{}".format(user, passwd, db)
 
 engine = create_engine(db_url)
-
 Base = declarative_base()
 
 class State(Base):
     """"Creates State class, inherits from Base"""
-    
+
     __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
